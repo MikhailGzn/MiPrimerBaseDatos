@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.lab2.controllers.IngresoObjetoController" >
+    <children>
+        <GridPane alignment="CENTER" hgap="10.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            
+            <Label text="Código:" />
+            <TextField fx:id="codigoTextField" GridPane.columnIndex="1" />
+            
+            <Label text="Nombre:" GridPane.rowIndex="1" />
+            <TextField fx:id="nombreTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            
+            <Label text="Tipo de Extracción:" GridPane.rowIndex="2" />
+            <TextField fx:id="tipoExtraccionTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            
+            <Label text="Alto:" GridPane.rowIndex="3" />
+            <TextField fx:id="altoTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            
+            <Label text="Largo:" GridPane.rowIndex="4" />
+            <TextField fx:id="largoTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            
+            <Label text="Espesor:" GridPane.rowIndex="5" />
+            <TextField fx:id="espesorTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            
+            <Label text="Peso:" GridPane.rowIndex="6" />
+            <TextField fx:id="pesoTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            
+            <Label text="Cantidad:" GridPane.rowIndex="7" />
+            <TextField fx:id="cantidadTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            
+            <Label text="Fecha de Registro:" GridPane.rowIndex="8" />
+            <TextField fx:id="fechaRegistroTextField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            
+            <Label text="Descripción:" GridPane.rowIndex="9" />
+            <TextField fx:id="descripcionTextField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            
+            <Label text="Origen:" GridPane.rowIndex="10" />
+            <TextField fx:id="origenTextField" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            
+            <Label text="Código de Cuadrícula Asociado:" GridPane.rowIndex="11" />
+            <TextField fx:id="codigoAsociadoTextField" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            
+            <Label text="Código Caja Contiene:" GridPane.rowIndex="12" />
+            <TextField fx:id="codigoContenidoTextField" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            
+            <Label text="DNI Arqueólogo Ingresa:" GridPane.rowIndex="13" />
+            <TextField fx:id="dniIngresaTextField" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            
+            <Label text="Lítico o Cermico (C-R):" GridPane.rowIndex="14" />
+            <TextField fx:id="oesTextField" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            
+            <Button text="Guardar" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="15" onAction="#handleButtomGuardar" />
+        </GridPane>
+    </children>
+</AnchorPane>

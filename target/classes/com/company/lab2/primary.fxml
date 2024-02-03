@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.lab2.controllers.PrimaryController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomMostrarPersonas" text="Mostrar Personas" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomMostrarCajas" text="Mostrar Cajas" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomAgregarObjeto" text="Agregar Objeto" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomEliminarCaja" text="Eliminar Caja" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomObjetosAlmacenadosEnCaja" text="Mostrar Objetos de una Caja" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomObjetosEntreFecha" text="Mostrar Objetos Entre Fechas" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomObjetosXTipo" text="Cantidad de Objetos por Tipo" />
+            <MenuItem mnemonicParsing="false" onAction="#handleButtomResumen" text="Resumen" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtomArqueologoCantObjetos" text="Arqueólogos mas Cantidad Objetos" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtomCajasVacias" text="Mostrar Cajas Vacias" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtomMaxMinAVG" text="Mostrar Max Min AVG Objetos" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtomPesoXCaja" text="Mostrar Cajas mas Peso Total" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Leer Readme :D" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Text layoutX="175.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base de datos Arqueologos">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

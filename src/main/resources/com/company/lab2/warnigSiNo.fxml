@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.lab2.controllers.WarningSiNoController">
+    <VBox spacing="10" alignment="CENTER">
+        <Label fx:id="mensajeLabel" />
+        <HBox spacing="10">
+            <Button fx:id="siButton" text="Sí" onAction="#siButtonAction" />
+            <Button fx:id="noButton" text="No" onAction="#noButtonAction" />
+            <Button fx:id="cancelarButton" text="Cancelar" onAction="#cancelarButtonAction" />
+        </HBox>
+    </VBox>
+</GridPane>

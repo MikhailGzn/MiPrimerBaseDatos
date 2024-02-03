@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.lab2.controllers.TablaObjetosController">
+    <children>
+        <TableView fx:id="tableView" prefHeight="400.0" prefWidth="600.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="codigoColumn" prefWidth="110.0" text="Codigo" />
+                <TableColumn fx:id="nombreColumn" prefWidth="110.0" text="Nombre" />
+                <TableColumn fx:id="tipoExtraccionColumn" prefWidth="110.0" text="Tipo de Extraccion" />
+                <TableColumn fx:id="altoColumn" prefWidth="170.0" text="Alto" />
+                <TableColumn fx:id="largoColumn" prefWidth="110.0" text="Largo" />
+                <TableColumn fx:id="espesorColumn" prefWidth="110.0" text="Espesor" />
+                <TableColumn fx:id="pesoColumn" prefWidth="110.0" text="Peso" />
+                <TableColumn fx:id="cantidadColumn" prefWidth="110.0" text="Cantidad" />
+                <TableColumn fx:id="fechaRegistroColumn" prefWidth="110.0" text="Fecha de Registro" />
+                <TableColumn fx:id="descripcionColumn" prefWidth="110.0" text="Descripcion" />
+                <TableColumn fx:id="origenColumn" prefWidth="110.0" text="Origen" />
+                <TableColumn fx:id="codigoCuadriculaAsociaColumn" prefWidth="110.0" text="Codigo Cuadricula Asociado" />
+                <TableColumn fx:id="codigoCajaContieneColumn" prefWidth="110.0" text="Codigo Caja Contiene" />
+                <TableColumn fx:id="dniPersonaIngresaColumn" prefWidth="110.0" text="Dni Persona Ingresó" />
+                <TableColumn fx:id="esColumn" prefWidth="110.0" text="Lítico o Cerámico" />
+            </columns>
+        </TableView>
+        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>
